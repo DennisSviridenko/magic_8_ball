@@ -1,3 +1,6 @@
+const log = require('log-to-file');
+
+
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
@@ -31,6 +34,8 @@ function lol(){
         case 8:
             document.getElementById('label').innerHTML = 'I dont know';
             break;
+        
+        log(document.getElementById(jo).value)
     }
 }
 
